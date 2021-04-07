@@ -33,6 +33,8 @@ const Footer = ({
       {...props}
       className={classes}
     >
+      <div className="wave"></div>
+      <div className="wave"></div>
       <div className="container">
         <div className={
           classNames(
@@ -40,13 +42,13 @@ const Footer = ({
             topDivider && 'has-top-divider'
           )}>
           <div className="footer-top space-between text-xxs">
-            <Logo />
+            <a href="mailto:letunovskiymn@mail.ru">letunovskiymn@mail.ru</a>
             <FooterSocial />
           </div>
-          <div className="footer-bottom space-between text-xxs invert-order-desktop">
-            <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
-          </div>
+          {/*<div className="footer-bottom space-between text-xxs invert-order-desktop">*/}
+          {/*  /!*<FooterNav />*!/*/}
+          {/*  <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>*/}
+          {/*</div>*/}
         </div>
       </div>
     </footer>
